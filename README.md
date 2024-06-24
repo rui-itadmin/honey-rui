@@ -1,14 +1,14 @@
 purpose
 ===
-A simple honeypot program, specify any port number to listen on, when a sniffer tries to connect it will print the connection information, and if an rsyslog server is specified it will also send the information to the rsyslog server.
+A simple honeypot program, specify any port number to listen on, when a sniffer tries to connect it will print the connection information, and if a rsyslog server is specified it will also send the information to the rsyslog server.
 
 
 env for image
 ===
-RSYSLOG_SERVER set remote syslog server. we use udp for it
-RSYSLOG_PORT set port for remote syslog server. default is 1514
-LISTEN_PORTS set listen port for image. default is 9999
-HEALTH_INTERVAL echo "service in running"
+- RSYSLOG_SERVER set remote syslog server. we use udp for it
+- RSYSLOG_PORT set port for remote syslog server. default is 1514
+- LISTEN_PORTS set listen port for image. default is 9999
+- HEALTH_INTERVAL echo "service in running"
 
 
 build image

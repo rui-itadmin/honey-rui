@@ -5,10 +5,10 @@ A simple honeypot program, specify any port number to listen on, when a sniffer 
 
 env for image
 ===
-- RSYSLOG_SERVER set remote syslog server. we use udp for it
-- RSYSLOG_PORT set port for remote syslog server. default is 1514
-- LISTEN_PORTS set listen port for image. default is 9999
-- HEALTH_INTERVAL echo "service in running"
+- RSYSLOG_SERVER : set remote syslog server. we use udp for it
+- RSYSLOG_PORT : set port for remote syslog server. default is 1514
+- LISTEN_PORTS : set listen port for image. default is 9999
+- HEALTH_INTERVAL : default is 86400s (1 day), then echo "service in running"
 
 
 build image
